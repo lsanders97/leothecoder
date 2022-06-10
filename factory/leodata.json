@@ -1,0 +1,9 @@
+{
+	"name": "leodata",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c95ea22e-1b29-48ed-a27a-3f45523f851d",
+		"tenantId": "28d36a35-15e4-4297-8331-2369829bbf82"
+	}
+}
