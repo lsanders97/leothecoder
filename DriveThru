@@ -1,0 +1,60 @@
+#Progam that implements a drive thru
+def printMenu():
+    print('  1. Chicken Biscut \n  2. Sausage Biscut\n  3. Sausage & Egg Biscut\n  4. Pancakes')
+
+
+def breakfast(order):
+    breakfast = {
+        'Chicken Biscut' : 1,
+        'Sausage Biscut' : 2,
+        'Sausage & Egg Biscut' : 3,
+        'Pancakes' : 4
+             }
+    
+    price = 0
+    total = 0
+    for i in range(len(order)):
+        if breakfast['Chicken Biscut'] ==  order[i]:
+            price = 3.49
+        elif breakfast['Sausage Biscut'] ==  order[i]:
+            price = 3
+        elif breakfast['Sausage & Egg Biscut'] ==  order[i]:
+            price = 4.50 
+        elif breakfast['Pancakes'] ==  order[i]:
+            price = 2
+        total += price 
+    print('Your total is $'+ str(total))
+    
+def dinner():    
+    dinner = {
+        'Chicken Sandwhich' : 1,
+        'Burger' : 2,
+        'Salad' : 3,
+        'Chicken Wrap' : 4
+    }
+    
+    price = 0
+    if dinner['Chicken Sandwhich'] ==  x:
+        price = 3
+    elif dinner['Burger'] ==  x:
+        price = 3
+    elif dinner['Salad'] ==  x:
+        price = 4.50 
+    elif dinner['Chicken Wrap'] ==  x:
+        price = 2
+    return price 
+    
+
+print('Hello welcome Ching! Here is our breakfast menu.')
+printMenu()
+
+total = 0
+order = []
+while True:    
+    x = int(input('What would you like to order?'))
+    order.append(x)
+    choice = input('Would you like to order anything else? Y/N\n')
+    if choice == 'N':
+        breakfast(order)
+        break
+        
